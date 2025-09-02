@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookInfo>
+    <book>
+        <bno>1</bno>
+        <bname>JAVA</bname>
+        <author>Balguru Swami</author>
+        <price>250</price>
+        <year>2006</year>
+    </book>
+    <book>
+        <bno>2</bno>
+        <bname>C</bname>
+        <author>Denis Ritchie</author>
+        <price>500</price>
+        <year>1971</year>
+    </book>
+</BookInfo>
+

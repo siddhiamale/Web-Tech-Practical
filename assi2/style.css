@@ -1,0 +1,14 @@
+IName {
+    color: red;
+    font-family: "Copperplate Gothic Light";
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+IPrice, Quantity {
+    color: yellow;
+    font-family: Arial;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
