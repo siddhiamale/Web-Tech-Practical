@@ -1,0 +1,31 @@
+<!--Create a JavaScript form validation that ensures the email input contains an "@" symbol before
+submission.-->
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+<h2>Email Form</h2>
+
+<form onsubmit="return validateEmail()">
+    <label>Enter Email: </label>
+    <input type="text" id="email"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function validateEmail() {
+    const email = document.getElementById("email").value.trim();
+
+    if (email === "" || !email.includes("@")) {
+        alert("Please enter a valid email containing '@'");
+        return false; // prevent submission
+    }
+
+    alert("Email submitted successfully!");
+    return true;
+}
+</script>
+</body>
+</html>
+

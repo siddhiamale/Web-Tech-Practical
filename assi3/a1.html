@@ -1,0 +1,29 @@
+<!--Write a JavaScript to display the message “Exams are near, have you started preparing for?”
+using alert, prompt, and confirm boxes. Accept proper input from the user and display messages
+accordingly.-->
+<html>
+<body>
+<h1>Displaying messages</h1>
+<p>Click to continue</p>
+<input type="button" value="ClickMe..!" onClick="msg()">
+<script>
+function msg()
+{
+alert("Exams are near, have you started preparing for ?");
+do{
+name=prompt("Enter your name :").trim();
+}while(!name);
+
+let c=confirm(`${name} is started preparing`);
+
+if(c){
+alert(`${name} started preparing`);
+return true;
+}
+alert(`${name}  is not started preparing`);
+return false;
+}
+
+</script>
+</body>
+</html>
