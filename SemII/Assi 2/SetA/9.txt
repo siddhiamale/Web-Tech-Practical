@@ -1,0 +1,3 @@
+9. Locate the .env.example file and write the command to create a copy of it named .env.
+
+cp .env.example .env
