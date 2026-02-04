@@ -1,0 +1,5 @@
+8. Create a route that returns a simple HTML <h1> tag directly from the route closure.
+
+Route::get('/welcome', function () {
+    return "<h1>Welcome to Laravel</h1>";
+});
