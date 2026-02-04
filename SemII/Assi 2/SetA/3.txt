@@ -1,0 +1,3 @@
+3. Create a new Laravel project named first_lab using the composer create-project method.
+
+composer create-project laravel/laravel first_lab
