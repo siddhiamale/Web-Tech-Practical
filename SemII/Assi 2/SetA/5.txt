@@ -1,0 +1,4 @@
+5. Identify the default port number used by php artisan serve and write the command to run it on a
+custom port (e.g., 8080).
+
+php artisan serve --port=8080
