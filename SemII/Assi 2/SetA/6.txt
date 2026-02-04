@@ -1,0 +1,5 @@
+6. Create a route in routes/web.php that returns the string "Laravel Lab 2 Started" at the /status URL.
+
+Route::get('/status', function () {
+    return "Laravel Lab 2 Started";
+});
