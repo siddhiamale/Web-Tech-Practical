@@ -1,0 +1,3 @@
+2. Write the command to verify if the Laravel Installer is correctly added to your system path.
+
+laravel --version
