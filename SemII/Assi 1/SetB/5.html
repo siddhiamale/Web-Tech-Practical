@@ -1,0 +1,24 @@
+<!--5. Write a script to create a "Sticky" header that stays at the top of the viewport even when the user
+scrolls down.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+<!-- Sticky Header -->
+<header class="sticky top-0 bg-blue-500 text-white p-4">
+    <h1 class="text-lg font-bold">Sticky Header</h1>
+</header>
+
+<!-- Content to enable scrolling -->
+<div class="p-6 space-y-4">
+    <p>Scroll down</p>
+    <p class="h-[1500px]">Content Area</p>
+</div>
+
+</body>
+</html>
