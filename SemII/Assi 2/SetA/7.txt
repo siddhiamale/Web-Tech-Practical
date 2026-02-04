@@ -1,0 +1,4 @@
+7. Write the command to check the current version of the Laravel Framework installed in your
+project.
+
+php artisan --version
