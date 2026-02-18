@@ -1,0 +1,23 @@
+<!--8. Blade code using @isset with output check-->
+
+In file -> resources/views/title.blade.php
+
+@isset($title)
+    <h1>{{ $title }}</h1>
+@endisset
+
+--------------------------------------------------
+
+In folder -> routes/web.php
+
+Route::get('/title', function () {
+    $title = "Welcome to Laravel";
+    return view('title', ['title' => $title]);
+});
+
+--------------------------------------------------
+Open browser:
+http://127.0.0.1:8000/title
+
+Output:
+Welcome to Laravel
