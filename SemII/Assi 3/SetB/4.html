@@ -1,0 +1,47 @@
+<!--4. Write a child Blade view that extends app.blade.php using @extends and @section.-->
+
+In file -> resources/views/layouts/app.blade.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My App</title>
+</head>
+<body>
+
+    <h1>Header</h1>
+
+    @yield('content')
+
+    <footer>Footer</footer>
+
+</body>
+</html>
+
+--------------------------------------------------
+
+In file -> resources/views/home.blade.php
+
+@extends('layouts.app')
+
+@section('content')
+    <h2>This is Home Page Content</h2>
+@endsection
+
+--------------------------------------------------
+
+In routes/web.php
+
+Route::view('/home', 'home');
+
+--------------------------------------------------
+
+<!--How to check output-->
+Open browser:
+http://127.0.0.1:8000/home
+
+Output:
+
+Header  
+This is Home Page Content  
+Footer
