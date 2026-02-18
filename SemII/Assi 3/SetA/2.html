@@ -1,0 +1,22 @@
+<!--2. Write Blade code in greet.blade.php to display a $username variable using {{ }} syntax.-->
+
+In file -> resources/views/greet.blade.php
+
+<h1>Hello, {{ $username }}</h1>
+
+--------------------------------------------------
+
+In folder -> routes/web.php
+
+Route::get('/greet', function () {
+    $username = "Siddhi";
+    return view('greet', ['username' => $username]);
+});
+
+--------------------------------------------------
+
+Open browser 
+http://127.0.0.1:8000/greet
+
+Output:
+Hello, Siddhi
