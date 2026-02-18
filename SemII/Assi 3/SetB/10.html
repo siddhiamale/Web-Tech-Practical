@@ -1,0 +1,48 @@
+<!--10. Write a controller method that sends $name, $email, and $age to a view using compact().-->
+
+Step 1: Controller method
+
+In file -> app/Http/Controllers/UserController.php
+
+public function sendData()
+{
+    $name = "Siddhi";
+    $email = "siddhi@gmail.com";
+    $age = 20;
+
+    return view('user', compact('name','email','age'));
+}
+
+--------------------------------------------------
+
+Step 2: Blade file
+
+In file -> resources/views/user.blade.php
+
+Name: {{ $name }} <br>
+Email: {{ $email }} <br>
+Age: {{ $age }}
+
+--------------------------------------------------
+
+Step 3: Route
+
+In routes/web.php
+
+use App\Http\Controllers\UserController;
+
+Route::get('/user', [UserController::class, 'sendData']);
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+php artisan serve
+
+Open:
+http://127.0.0.1:8000/user
+
+Output:
+Name: Siddhi
+Email: siddhi@gmail.com
+Age: 20
