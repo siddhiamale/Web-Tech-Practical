@@ -1,0 +1,32 @@
+<!--8. Write a route that returns a JSON response containing a status and a message array.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/api/status', function () {
+    return response()->json([
+        'status' => 'success',
+        'messages' => [
+            'Route is working'
+        ]
+    ]);
+});
+
+--------------------------------------------------
+
+How to check output:
+
+Run server:
+php artisan serve
+
+Open in browser:
+http://127.0.0.1:8000/api/status
+
+Output (JSON):
+
+{
+  "status": "success",
+  "messages": [
+    "Route is working"
+  ]
+}
