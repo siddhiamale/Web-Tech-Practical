@@ -1,0 +1,16 @@
+<!--10. Use the Route::view() method to return a view called welcome without using a closure function.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::view('/welcome', 'welcome');
+
+--------------------------------------------------
+
+How to check output:
+
+Run server:
+php artisan serve
+
+Open in browser:
+http://127.0.0.1:8000/welcome
