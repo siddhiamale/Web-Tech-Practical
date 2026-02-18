@@ -1,0 +1,32 @@
+<!--4. Change the APP_NAME in the .env file to "My_Laravel_App" and write a route that returns this name using the config() helper.-->
+
+In file -> .env
+Find line:
+
+APP_NAME=Laravel
+
+Change it to:
+
+APP_NAME=My_Laravel_App
+
+--------------------------------------------------
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/appname', function () {
+    return config('app.name');
+});
+
+--------------------------------------------------
+
+How to check output:
+
+Run server:
+php artisan serve
+
+Open in browser:
+http://127.0.0.1:8000/appname
+
+Output:
+My_Laravel_App
