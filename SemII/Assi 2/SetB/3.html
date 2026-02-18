@@ -1,0 +1,30 @@
+<!--3. Create a directory named assets inside the public folder and explain how to access a file inside it via a URL.-->
+
+In folder -> public/
+Create folder named assets
+
+Example structure:
+public/assets/style.css
+
+-----------------------------------------
+
+How to access in browser:
+
+Start server:
+php artisan serve
+
+Open URL:
+http://127.0.0.1:8000/assets/style.css
+
+This will open the file
+
+-----------------------------------------
+
+How to use inside Blade file:
+
+<link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+<img src="{{ asset('assets/image.png') }}">
+<script src="{{ asset('assets/script.js') }}"></script>
+
+-----------------------------------------
+
