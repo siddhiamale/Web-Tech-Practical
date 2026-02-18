@@ -1,0 +1,34 @@
+<!--9. Write a route definition that points to the index method of StudentController using array syntax.-->
+
+Step 1: Create Controller
+
+php artisan make:controller StudentController
+
+--------------------------------------------------
+
+In file -> app/Http/Controllers/StudentController.php
+
+public function index()
+{
+    return "Student List Page";
+}
+
+--------------------------------------------------
+
+In routes/web.php
+
+use App\Http\Controllers\StudentController;
+
+Route::get('/students', [StudentController::class, 'index']);
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+php artisan serve
+
+Open:
+http://127.0.0.1:8000/students
+
+Output:
+Student List Page
