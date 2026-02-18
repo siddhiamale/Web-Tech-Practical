@@ -1,0 +1,23 @@
+<!--4. Write a named route for /contact-us and generate a Blade <a> tag using the route() helper.-->
+
+In folder -> routes/web.php
+
+Route::get('/contact-us', function () {
+    return "Contact Page";
+})->name('contact');
+
+--------------------------------------------------
+
+In any Blade file (example: resources/views/home.blade.php)
+
+<a href="{{ route('contact') }}">Contact Us</a>
+
+--------------------------------------------------
+
+ Open browser:
+http://127.0.0.1:8000/
+
+Click on "Contact Us" link
+
+It will open:
+http://127.0.0.1:8000/contact-us
