@@ -1,0 +1,66 @@
+<!--5. Write a controller method that retrieves the email input using the Request object and returns it.-->
+
+Step 1: Create Controller
+
+Run command:
+php artisan make:controller UserController
+
+--------------------------------------------------
+
+In file -> app/Http/Controllers/UserController.php
+
+use Illuminate\Http\Request;
+
+public function getEmail(Request $request)
+{
+    $email = $request->input('email');
+    return "Entered Email: " . $email;
+}
+
+--------------------------------------------------
+
+<!--Create Blade form-->
+
+In file -> resources/views/emailform.blade.php
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Email Form</h2>
+
+<form method="POST" action="/get-email">
+    @csrf
+    <input type="email" name="email" placeholder="Enter email">
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
+
+--------------------------------------------------
+
+<!--Add Routes-->
+
+In routes/web.php
+
+use App\Http\Controllers\UserController;
+
+Route::view('/form', 'emailform');
+
+Route::post('/get-email', [UserController::class, 'getEmail']);
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+1. Run server:
+php artisan serve
+
+2. Open browser:
+http://127.0.0.1:8000/form
+
+3. Enter email and click submit
+
+Output:
+Entered Email: your_email_here
