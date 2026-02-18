@@ -1,0 +1,36 @@
+<!--1. Write the Artisan command to create a ProductController and a show() method that returns product.details view.-->
+
+Run command in terminal:
+
+php artisan make:controller ProductController
+
+--------------------------------------------------
+
+In file -> app/Http/Controllers/ProductController.php
+
+public function show()
+{
+    return view('product.details');
+}
+
+--------------------------------------------------
+
+In folder -> resources/views/product/
+Create file details.blade.php
+
+<h1>Product Details Page</h1>
+
+--------------------------------------------------
+
+In routes/web.php
+
+use App\Http\Controllers\ProductController;
+
+Route::get('/product', [ProductController::class, 'show']);
+
+--------------------------------------------------
+
+How to check:
+
+php artisan serve
+Open: http://127.0.0.1:8000/product
