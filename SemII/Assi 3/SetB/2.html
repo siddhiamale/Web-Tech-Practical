@@ -1,0 +1,25 @@
+<!--2. Write a Blade form including the @csrf directive.-->
+
+In file -> resources/views/form.blade.php
+
+<form method="POST" action="/submit">
+    @csrf
+    <input type="text" name="name" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+--------------------------------------------------
+
+In routes/web.php
+
+Route::view('/form', 'form');
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+php artisan serve
+Open: http://127.0.0.1:8000/form
+
+Output:
+Form with input and submit button visible
