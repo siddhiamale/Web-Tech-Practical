@@ -1,0 +1,13 @@
+<!--10. Write a route that redirects /old-url to /new-url.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::redirect('/old-url', '/new-url');
+
+--------------------------------------------------
+ Open browser:
+http://127.0.0.1:8000/old-url
+
+It will automatically redirect to:
+http://127.0.0.1:8000/new-url
