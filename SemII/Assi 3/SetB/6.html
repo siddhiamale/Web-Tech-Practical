@@ -1,0 +1,36 @@
+<!--6. Write a route with an optional parameter /profile/{id?} and controller logic with a default value 0.-->
+
+Step 1: Create Controller
+
+php artisan make:controller ProfileController
+
+--------------------------------------------------
+
+In file -> app/Http/Controllers/ProfileController.php
+
+public function show($id = 0)
+{
+    return "Profile ID: " . $id;
+}
+
+--------------------------------------------------
+
+In routes/web.php
+
+use App\Http\Controllers\ProfileController;
+
+Route::get('/profile/{id?}', [ProfileController::class, 'show']);
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+1. Run server:
+php artisan serve
+
+2. Open browser:
+http://127.0.0.1:8000/profile
+Output: Profile ID: 0
+
+http://127.0.0.1:8000/profile/5
+Output: Profile ID: 5
