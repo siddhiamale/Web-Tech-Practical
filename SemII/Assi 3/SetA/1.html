@@ -1,0 +1,28 @@
+<!--1. Write a route in web.php that passes a variable $course_name = "Laravel" to a view named course.blade.php.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/course', function () {
+    $course_name = "Laravel";
+    return view('course', ['course_name' => $course_name]);
+});
+
+--------------------------------------------------
+
+In folder -> resources/views/
+Create file course.blade.php
+
+In course.blade.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Course Page</title>
+</head>
+<body>
+
+    <h1>Course Name: {{ $course_name }}</h1>
+
+</body>
+</html>
