@@ -1,0 +1,18 @@
+<!--9. Create a route that uses a Regular Expression Constraint to ensure the {id} parameter is only numeric.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/user/{id}', function ($id) {
+    return "User ID: " . $id;
+})->where('id', '[0-9]+');
+
+--------------------------------------------------
+
+How to check output:
+
+Valid:
+http://127.0.0.1:8000/user/10   
+
+Invalid:
+http://127.0.0.1:8000/user/abc 
