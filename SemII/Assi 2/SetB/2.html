@@ -1,0 +1,8 @@
+<!--2. Write a route that accepts a dynamic parameter id (e.g., /post/{id}) and returns it to the browser.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/post/{id}', function ($id) {
+    return "Post ID is: " . $id;
+});
