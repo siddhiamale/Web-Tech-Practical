@@ -1,0 +1,25 @@
+<!--6. Blade directive to execute raw PHP code + output-->
+
+In any Blade file (example: resources/views/test.blade.php)
+
+@php
+    $x = 10;
+@endphp
+
+<p>Value of x is: {{ $x }}</p>
+
+--------------------------------------------------
+
+In routes/web.php add route
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+---------------------------------------------------
+
+Open browser:
+http://127.0.0.1:8000/test
+
+Output:
+Value of x is: 10
