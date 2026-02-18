@@ -1,0 +1,20 @@
+<!--3. Write a route that returns a JSON response with status and message using a Closure.-->
+
+In folder -> routes/web.php
+
+Route::get('/json', function () {
+    return response()->json([
+        'status' => 'success',
+        'message' => 'Route working'
+    ]);
+});
+
+--------------------------------------------------
+ Open browser 
+http://127.0.0.1:8000/json
+
+Output (JSON):
+{
+  "status": "success",
+  "message": "Route working"
+}
