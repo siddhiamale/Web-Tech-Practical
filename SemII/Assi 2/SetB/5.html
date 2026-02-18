@@ -1,0 +1,29 @@
+<!--5. Create a route that uses an Optional Parameter (e.g., /profile/{username?}) and provides a default value "Guest" if the name is missing.-->
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/profile/{username?}', function ($username = "Guest") {
+    return "Username: " . $username;
+});
+
+--------------------------------------------------
+
+How to check output:
+
+Run server:
+php artisan serve
+
+Open in browser:
+
+1) With name:
+http://127.0.0.1:8000/profile/Siddhi
+
+Output:
+Username: Siddhi
+
+2) Without name:
+http://127.0.0.1:8000/profile
+
+Output:
+Username: Guest
