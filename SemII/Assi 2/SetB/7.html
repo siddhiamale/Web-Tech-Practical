@@ -1,0 +1,40 @@
+<!--7. Create a sub-folder admin inside resources/views and write a route to render a view located at resources/views/admin/dashboard.blade.php.-->
+
+In folder -> resources/views/
+Create a sub-folder named admin
+
+Inside admin folder create file:
+dashboard.blade.php
+
+--------------------------------------------------
+
+In file -> resources/views/admin/dashboard.blade.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to Admin Dashboard</h1>
+</body>
+</html>
+
+--------------------------------------------------
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+});
+
+--------------------------------------------------
+
+How to check output:
+
+Run server:
+php artisan serve
+
+Open in browser:
+http://127.0.0.1:8000/admin/dashboard
