@@ -1,0 +1,36 @@
+<!--8. Write Blade code to include header.blade.php using @include.-->
+
+Step 1: Create header file
+
+In file -> resources/views/header.blade.php
+
+<h1>This is Header</h1>
+
+--------------------------------------------------
+
+Step 2: Include in another Blade
+
+In file -> resources/views/home.blade.php
+
+@include('header')
+
+<h2>Home Page</h2>
+
+--------------------------------------------------
+
+In routes/web.php
+
+Route::view('/home', 'home');
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+php artisan serve
+
+Open:
+http://127.0.0.1:8000/home
+
+Output:
+This is Header
+Home Page
