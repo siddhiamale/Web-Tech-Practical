@@ -1,0 +1,25 @@
+<!--1. Create a new view file named home.blade.php and write a route to render it at the root / path.-->
+
+In folder ->  resources/views/
+Create home.blade.php
+
+In home.blade.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to Home Page </h1>
+    <p>This is my first Laravel view.</p>
+</body>
+</html>
+
+
+In folder -> routes/web.php
+Add following route
+
+Route::get('/', function () {
+    return view('home');
+});
