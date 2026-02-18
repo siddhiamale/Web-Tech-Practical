@@ -1,0 +1,38 @@
+<!--7. Write the Blade directive used for form method spoofing to submit a PUT request.-->
+
+In any Blade file (example: resources/views/update.blade.php)
+
+<form method="POST" action="/update">
+    @csrf
+    @method('PUT')
+
+    <input type="text" name="name" placeholder="Enter name">
+    <button type="submit">Update</button>
+</form>
+
+--------------------------------------------------
+
+<!--Add Route to handle PUT request-->
+
+In routes/web.php
+
+Route::view('/update-form', 'update');   // to open form
+
+Route::put('/update', function () {
+    return "Data updated successfully (PUT request received)";
+});
+
+--------------------------------------------------
+
+<!--How to check output-->
+
+1. Run server:
+php artisan serve
+
+2. Open browser:
+http://127.0.0.1:8000/update-form
+
+3. Enter any name and click Update
+
+Output:
+Data updated successfully (PUT request received)
