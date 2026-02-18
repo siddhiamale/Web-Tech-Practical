@@ -1,0 +1,43 @@
+<!--9. Write a Blade <img> tag using the url() helper to load an image from public/images.-->
+
+Step 1: Put image file
+
+In folder -> public/images/
+Add image file (example: photo.png)
+
+--------------------------------------------------
+
+Step 2: Blade file
+
+In file -> resources/views/image.blade.php
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Page</title>
+</head>
+<body>
+
+    <h1>My Image</h1>
+
+    <img src="{{ url('images/photo.png') }}" alt="image" width="200">
+
+</body>
+</html>
+
+--------------------------------------------------
+
+Step 3: Route
+
+In folder -> routes/web.php
+
+Route::view('/image', 'image');
+
+--------------------------------------------------
+
+Step 4: How to check output
+Open browser:
+http://127.0.0.1:8000/image
+
+Output:
+Image will be displayed on screen
