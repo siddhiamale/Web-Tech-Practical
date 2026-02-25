@@ -1,0 +1,5 @@
+4. Write an Eloquent query to fetch products with price > 100.
+
+Path -> Controller file (ProductController.php)
+
+$products = Product::where('price', '>', 100)->get();
