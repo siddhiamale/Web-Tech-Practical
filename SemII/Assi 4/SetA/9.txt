@@ -1,0 +1,4 @@
+9. Write migration code to make an address column nullable.
+In file -> inside migration file
+
+$table->string('address')->nullable();
