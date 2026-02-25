@@ -1,0 +1,5 @@
+9. Write Eloquent code to count total records in the products table.
+
+Path -> Controller file
+
+$count = Product::count();
