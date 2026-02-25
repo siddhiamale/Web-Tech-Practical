@@ -1,0 +1,5 @@
+10. Write Eloquent code to check if a product named "Tablet" exists.
+
+Path -> Controller file
+
+$exists = Product::where('title', 'Tablet')->exists();
