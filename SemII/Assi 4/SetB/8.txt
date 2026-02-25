@@ -1,0 +1,5 @@
+8. Write an Eloquent query to fetch only the first 5 products.
+
+Path -> Controller file
+
+$products = Product::limit(5)->get();
