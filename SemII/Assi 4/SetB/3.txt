@@ -1,0 +1,14 @@
+3. Write controller code to insert a record using Product::create().
+
+Path -> project_root/app/Http/Controllers/ProductController.php
+
+use App\Models\Product;
+
+public function store()
+{
+    Product::create([
+        'title' => 'Mobile',
+        'price' => 15000,
+        'stock' => 10
+    ]);
+}
