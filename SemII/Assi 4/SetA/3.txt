@@ -1,0 +1,10 @@
+Q3) Write migration code to create name (string) and description (text) columns in the categories table.
+
+In database\migrations\YYYY_MM_DD_create_categories_table.php
+
+Schema::create('categories', function (Blueprint $table) {
+    $table->id();
+    $table->string('name');
+    $table->text('description');
+    $table->timestamps();
+});
