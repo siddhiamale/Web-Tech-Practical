@@ -1,0 +1,3 @@
+6. Write the Artisan command to rollback the last migration batch.
+
+php artisan migrate:rollback
