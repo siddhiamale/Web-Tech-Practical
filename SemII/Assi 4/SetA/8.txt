@@ -1,0 +1,5 @@
+8. Write migration code to set a default value of "active" for a status column.
+
+In file -> inside any migration file (database/migrations)
+
+$table->string('status')->default('active');
