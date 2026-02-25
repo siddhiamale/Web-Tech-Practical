@@ -1,0 +1,7 @@
+6. Write code to find a product with ID 5 and update its title to "New Laptop".
+
+Path -> Controller file
+
+$product = Product::find(5);
+$product->title = "New Laptop";
+$product->save();
