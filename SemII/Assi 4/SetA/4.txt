@@ -1,0 +1,3 @@
+4) Write the Artisan command to run all pending migrations.
+
+php artisan migrate
