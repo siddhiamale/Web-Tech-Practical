@@ -1,0 +1,5 @@
+5. Write an Eloquent query to fetch products ordered by created_at in descending order.
+
+Path -> Controller file
+
+$products = Product::orderBy('created_at', 'desc')->get();
