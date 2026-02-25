@@ -1,0 +1,3 @@
+10. Write the Artisan command to check migration status.
+
+php artisan migrate:status
