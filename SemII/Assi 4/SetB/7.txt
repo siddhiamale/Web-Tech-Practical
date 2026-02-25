@@ -1,0 +1,5 @@
+7. Write Eloquent code to delete a record using the destroy() method.
+
+Path -> Controller file
+
+Product::destroy(5);
