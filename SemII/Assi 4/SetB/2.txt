@@ -1,0 +1,6 @@
+2. Write the $fillable property in the Product model for title, price, and stock.
+
+Path -> project_root/app/Models/Product.php
+
+protected $fillable = ['title', 'price', 'stock'];
+
