@@ -1,0 +1,5 @@
+8. Write Blade code to display a success message using session('success').
+
+@if(session('success'))
+<p>{{ session('success') }}</p>
+@endif
