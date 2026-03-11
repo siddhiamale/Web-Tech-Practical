@@ -1,0 +1,5 @@
+9. Write a route that accepts a dynamic {id} parameter and returns JSON.
+
+Route::get('/users/{id}',function($id){
+return response()->json(User::find($id));
+});
