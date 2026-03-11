@@ -1,0 +1,3 @@
+2. Inside a Form Request, write a validation rule to ensure sku is unique in the products table.
+
+'sku' => 'required|unique:products'
