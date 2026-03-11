@@ -1,0 +1,3 @@
+3: Write the database table name where Laravel stores registered users.
+
+users
