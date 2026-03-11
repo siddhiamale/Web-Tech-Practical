@@ -1,0 +1,10 @@
+4. Demonstrate how to use $request->validated() inside a controller.
+
+public function store(StoreUserRequest $request)
+{
+    $data = $request->validated();
+    
+    User::create($data);
+
+    return redirect()->back()->with('success','User created successfully');
+}
