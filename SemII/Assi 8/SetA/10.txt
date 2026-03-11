@@ -1,0 +1,6 @@
+10. Write a JSON response for a successful API request with message and data.
+
+return response()->json([
+'message' => 'Operation successful',
+'data' => $product
+],200);
