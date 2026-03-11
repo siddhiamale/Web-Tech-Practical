@@ -1,0 +1,3 @@
+10. Write a controller return statement to redirect back with an error message.
+
+return redirect()->back()->with('error','Something went wrong');
