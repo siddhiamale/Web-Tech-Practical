@@ -1,0 +1,6 @@
+8. Explain the use of the authorize() method in Form Requests.
+
+public function authorize()
+{
+return true;
+}
