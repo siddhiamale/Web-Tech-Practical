@@ -1,0 +1,6 @@
+9. Write the authorize() method inside a Form Request that allows all users.
+
+public function authorize()
+{
+return true;
+}
