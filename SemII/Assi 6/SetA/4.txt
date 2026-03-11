@@ -1,0 +1,5 @@
+4. Create a username input field and use the @error('username') directive to 
+conditionally add the CSS class border-red-500.
+
+<input type="text" name="username"
+class="@error('username') border-red-500 @enderror">
