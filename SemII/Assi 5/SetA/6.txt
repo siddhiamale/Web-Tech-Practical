@@ -1,0 +1,7 @@
+6: Write the Blade directive that displays content only to authenticated users.
+
+In resources/views/*.blade.php
+
+@auth
+    <p>User is logged in</p>
+@endauth
