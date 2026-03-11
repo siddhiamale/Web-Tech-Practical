@@ -1,0 +1,9 @@
+1. Write a controller method to validate a contact form with name as required and email as required and valid.
+
+public function submitForm(Request $request)
+{
+$request->validate([
+'name' => 'required',
+'email' => 'required|email'
+]);
+}
