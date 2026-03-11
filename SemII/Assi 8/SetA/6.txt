@@ -1,0 +1,13 @@
+6. Write controller logic to return a 404 JSON response if a record is not found.
+
+
+public function show($id)
+{
+    $product = Product::find($id);
+
+    if(!$product){
+        return response()->json([
+            'message' => 'Record not found'
+        ],404);
+    }
+}
