@@ -1,0 +1,3 @@
+6. Write a validation rule that ensures an input field contains a valid email address.
+
+'email' => 'required|email'
