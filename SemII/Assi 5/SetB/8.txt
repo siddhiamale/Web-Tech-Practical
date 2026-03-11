@@ -1,0 +1,8 @@
+8. Write conditional redirect logic after login based on user role.
+
+if(auth()->user()->role=='admin'){
+return redirect('/admin/dashboard');
+}
+else{
+return redirect('/dashboard');
+}
