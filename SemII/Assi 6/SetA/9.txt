@@ -1,0 +1,5 @@
+9. Write a controller return statement that redirects back with input data and validation errors.
+
+return redirect()->back()
+->withInput()
+->withErrors($validator);
