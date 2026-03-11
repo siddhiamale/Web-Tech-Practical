@@ -1,0 +1,6 @@
+3. Write the index() method to return all records from a Product model as JSON.
+
+public function index()
+{
+return response()->json(Product::all(),200);
+}
