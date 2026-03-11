@@ -1,0 +1,5 @@
+10: Write the constant used to define the post-login redirect path.
+
+app/Providers/RouteServiceProvider.php
+
+public const HOME = '/dashboard';
