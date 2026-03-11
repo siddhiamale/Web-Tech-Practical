@@ -1,0 +1,6 @@
+5. Write a route that returns a single record by ID with HTTP status 200.
+
+Route::get('/product/{id}',function($id){
+$product = Product::find($id);
+return response()->json($product,200);
+});
