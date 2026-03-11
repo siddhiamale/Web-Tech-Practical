@@ -1,0 +1,8 @@
+10. Write the attributes() method to rename email_address to Business Email in validation errors.
+
+public function attributes()
+{
+return [
+'email_address' => 'Business Email'
+];
+}
