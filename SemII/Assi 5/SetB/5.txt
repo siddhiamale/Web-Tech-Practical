@@ -1,0 +1,4 @@
+5. Write code to register the AdminMiddleware with the alias admin.
+protected $routeMiddleware=[
+'admin'=>\App\Http\Middleware\AdminMiddleware::class
+];
