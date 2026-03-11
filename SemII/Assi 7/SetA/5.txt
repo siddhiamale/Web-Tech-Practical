@@ -1,0 +1,3 @@
+5. Create a password validation rule with a minimum length of 8 characters.
+
+'password' => 'min:8'
