@@ -1,0 +1,7 @@
+9: Write a PHP condition using Auth::check() to verify user authentication.
+
+In Controller
+
+if(Auth::check()){
+    echo "User is logged in";
+}
