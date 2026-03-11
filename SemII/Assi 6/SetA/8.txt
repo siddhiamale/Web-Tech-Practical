@@ -1,0 +1,5 @@
+8. Use the @error directive to display a red error message below an email input field.
+
+@error('email')
+<p style="color:red">{{ $message }}</p>
+@enderror
