@@ -1,0 +1,3 @@
+3. Write a validation rule for password that requires minimum 8 characters and uses the confirmed rule.
+
+'password' => 'required|min:8|confirmed'
