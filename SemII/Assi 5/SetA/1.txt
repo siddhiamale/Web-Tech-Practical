@@ -1,0 +1,2 @@
+1: Write the Composer command to install Laravel Breeze.
+composer require laravel/breeze --dev
