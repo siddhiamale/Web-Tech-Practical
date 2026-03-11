@@ -1,0 +1,7 @@
+7: Write the Blade directive that displays content only to guest users.
+
+resources/views/*.blade.php
+
+@guest
+    <p>Please login</p>
+@endguest
