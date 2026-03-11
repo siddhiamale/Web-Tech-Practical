@@ -1,0 +1,8 @@
+3. Write the messages() method to return a custom message for the phone.regex validation rule.
+
+public function messages()
+{
+return [
+'phone.regex' => 'Invalid phone format'
+];
+}
