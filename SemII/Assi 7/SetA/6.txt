@@ -1,0 +1,3 @@
+6. Write Blade code to preserve old input value for a text field after validation fails.
+
+<input type="text" name="name" value="{{ old('name') }}">
