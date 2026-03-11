@@ -1,0 +1,3 @@
+6. Write a validation rule using nullable for an optional field.
+
+'address' => 'nullable|string'
