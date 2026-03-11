@@ -1,0 +1,3 @@
+7. Write a validation rule for an age field that allows only integers between 18 and 99.
+
+'age' => 'required|integer|between:18,99'
