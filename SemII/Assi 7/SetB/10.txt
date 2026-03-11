@@ -1,0 +1,7 @@
+10. Show how to inject a Form Request into a controller method.
+
+public function store(StoreUserRequest $request)
+{
+$data = $request->validated();
+User::create($data);
+}
