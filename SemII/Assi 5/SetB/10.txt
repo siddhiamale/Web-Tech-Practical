@@ -1,0 +1,5 @@
+10. Write controller constructor code to apply auth middleware except for index and show.
+
+public function __construct(){
+$this->middleware('auth')->except(['index','show']);
+}
