@@ -1,0 +1,5 @@
+4. Write Blade code to show an error message only for the email field.
+
+@error('email')
+<p style="color:red">{{ $message }}</p>
+@enderror
