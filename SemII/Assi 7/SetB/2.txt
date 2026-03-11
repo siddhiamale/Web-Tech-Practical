@@ -1,0 +1,3 @@
+2. Define validation rules in a Form Request for email as unique in users table.
+
+'email' => 'required|email|unique:users'
