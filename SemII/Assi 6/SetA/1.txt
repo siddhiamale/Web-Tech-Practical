@@ -1,0 +1,10 @@
+1. Write a controller method that validates a contact form where name is required and message
+must be minimum 20 characters.
+
+public function submitContact(Request $request)
+{
+$request->validate([
+'name' => 'required',
+'message' => 'required|min:20'
+]);
+}
