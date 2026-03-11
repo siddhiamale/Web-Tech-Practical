@@ -1,0 +1,5 @@
+9. Write Blade code to show a navigation link only for users with role teacher.
+
+@if(Auth::user()->role=='teacher')
+<a href="/teacher/dashboard">Teacher Panel</a>
+@endif
