@@ -1,0 +1,4 @@
+2: Write the npm commands required to compile frontend assets after installing Breeze.
+
+npm install
+npm run dev
