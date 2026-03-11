@@ -1,0 +1,5 @@
+9. Write validation rules for a feedback form where message is required.
+
+$request->validate([
+'message' => 'required'
+]);
