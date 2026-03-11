@@ -1,0 +1,7 @@
+2: Write the migration code to set the default value of the role column to student.
+
+In database/migrations/...
+
+Schema::table('users',function(Blueprint $table){
+$table->string('role')->default('student');
+});
