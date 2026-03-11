@@ -1,0 +1,3 @@
+5. Write a validation rule using required_if for gst_number when user type is vendor.
+
+'gst_number' => 'required_if:user_type,vendor'
