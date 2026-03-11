@@ -1,0 +1,11 @@
+7. Write controller code to log out a user, invalidate the session, and regenerate the CSRF token.
+
+public function logout(Request $request)
+{
+    Auth::logout();
+
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+
+    return redirect('/');
+}
