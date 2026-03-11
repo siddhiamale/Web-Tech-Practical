@@ -1,0 +1,3 @@
+5. Write an <input> field that uses old('field_name') to preserve data after validation failure.
+
+<input type="text" name="name" value="{{ old('name') }}">
