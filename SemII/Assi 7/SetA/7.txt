@@ -1,0 +1,3 @@
+7. Validate a mobile number field as required and numeric.
+
+'mobile' => 'required|numeric'
