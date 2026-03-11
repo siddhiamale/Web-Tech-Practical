@@ -1,0 +1,7 @@
+5: Write a route in web.php for /dashboard protected by the auth middleware
+
+In routes/web.php
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware('auth');
