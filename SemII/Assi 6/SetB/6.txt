@@ -1,0 +1,3 @@
+6. Write a conditional validation rule where website_url is required only if has_website is checked.
+
+'website_url' => 'required_if:has_website,1'
