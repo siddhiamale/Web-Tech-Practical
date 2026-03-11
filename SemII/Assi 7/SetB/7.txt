@@ -1,0 +1,3 @@
+7. Redirect to a named route with a success message after form submission.
+
+return redirect()->route('home')->with('success','Form submitted successfully');
