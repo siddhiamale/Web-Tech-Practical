@@ -1,0 +1,5 @@
+8: Write Blade code to display the authenticated user’s email address using the Auth facade.
+
+resources/views/*.blade.php
+
+{{ Auth::user()->email }}
