@@ -1,0 +1,3 @@
+4. Write a validation rule for a priority field allowing only low, medium, or high.
+
+'priority' => 'required|in:low,medium,high'
