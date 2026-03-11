@@ -1,0 +1,8 @@
+3. Write a custom validation message for a required password field.
+
+public function messages()
+{
+return [
+'password.required' => 'Password field is required'
+];
+}
