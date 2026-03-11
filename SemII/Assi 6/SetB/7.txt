@@ -1,0 +1,3 @@
+7. Write controller code to flash a success message to the session after form submission.
+
+return redirect()->back()->with('success','Form submitted successfully');
