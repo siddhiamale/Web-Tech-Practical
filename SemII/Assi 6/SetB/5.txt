@@ -1,0 +1,5 @@
+5. Write controller code using $request->validated() to pass sanitized data to a model.
+
+public function store(StoreProductRequest $request){
+Product::create($request->validated());
+}
