@@ -1,0 +1,11 @@
+7. Write a controller method using response()->json() with custom status code.
+
+public function store(Request $request)
+{
+$product = Product::create($request->all());
+
+return response()->json([
+'message' => 'Product created',
+'data' => $product
+],201);
+}
